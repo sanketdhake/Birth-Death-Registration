@@ -1,0 +1,1069 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BFormPActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/rc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="20dp"
+
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Parent's Registeration Form :"
+                        android:textColor="@color/white"
+                        android:textSize="22dp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="-15dp"
+                    android:hint="1. Fathers' Details"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/i1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_fuser"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/cfname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/i1"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/i1"
+                    android:background="@color/editTextBG"
+                    android:hint="Child's Father Name"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/i4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_phone"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/cfphn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/i4"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/i4"
+                    android:background="@color/editTextBG"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout4"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/i5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_mail"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/cfemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/i5"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/i5"
+                    android:background="@color/editTextBG"
+                    android:hint="E-mail"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout5"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/i6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_aadhar"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/cfacn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/i6"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/i6"
+                    android:background="@color/editTextBG"
+                    android:hint="Aadhar-card Number"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout6"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="-15dp"
+                    android:hint="2. Mothers' Details"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout01"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/i11"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_fuser"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/cmname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/i11"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/i11"
+                    android:background="@color/editTextBG"
+                    android:hint="Child's Mother Name"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout7"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/i41"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_phone"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/cmphn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/i41"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/i41"
+                    android:background="@color/editTextBG"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout8"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/i51"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_mail"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/cmemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/i51"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/i51"
+                    android:background="@color/editTextBG"
+                    android:hint="E-mail"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout9"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/i61"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_aadhar"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/cmacn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/i61"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/i61"
+                    android:background="@color/editTextBG"
+                    android:hint="Aadhar-card Number"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout10"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="-15dp"
+                    android:layout_marginTop="-549dp"
+                    android:hint="3. Address Details"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout02"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/i12"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_place_black_24dp"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/cphn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/i12"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/i12"
+                    android:background="@color/editTextBG"
+                    android:hint="House No., House Name"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout11"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/i82"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_place_black_24dp"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/cpsn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/i82"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/i82"
+                    android:background="@color/editTextBG"
+                    android:hint="Street Name"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout15"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/i42"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_place_black_24dp"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/cpt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/i42"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/i42"
+                    android:background="@color/editTextBG"
+                    android:hint="Taluka"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout12"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/i52"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_place_black_24dp"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/cpd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/i52"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/i52"
+                    android:background="@color/editTextBG"
+                    android:hint="District"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout13"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/i62"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_place_black_24dp"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/cps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/i62"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/i62"
+                    android:background="@color/editTextBG"
+                    android:hint="State"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout14"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/i621"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_place_black_24dp"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/emailid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/i621"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/i621"
+                    android:background="@color/editTextBG"
+                    android:hint="Email id to recieve notification"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/emailid"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="3.Child Registeration Form :"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rc2"
+            android:id="@+id/rc3"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/clinearLayout1"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/crelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clinearLayout1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp">
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="-549dp"
+                    android:hint="1. Child Details"
+                    android:textColor="@color/black"
+                    android:paddingLeft="20dp"
+                    android:layout_marginLeft="-15dp"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/crelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/crelativeLayout"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/ci1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_fuser"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ci1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_toRightOf="@+id/ci1"
+                    android:background="@color/editTextBG"
+                    android:hint="Child Number"
+                    android:id="@+id/cn"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/crelativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/crelativeLayout1"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/ci4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_gender"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ci4"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/ci4"
+                    android:background="@color/editTextBG"
+                    android:hint="Gender"
+                    android:id="@+id/cg"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/crelativeLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/crelativeLayout4"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/ci5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_date_range_black_24dp"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ci5"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/ci5"
+                    android:background="@color/editTextBG"
+                    android:hint="Birth Date"
+                    android:id="@+id/cbd"
+                    android:inputType="date"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/crelativeLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/crelativeLayout5"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/ci6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_access_time_black_24dp"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ci6"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/ci6"
+                    android:background="@color/editTextBG"
+                    android:hint="Birth Time"
+                    android:id="@+id/cbt"
+                    android:inputType="time"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/crelativeLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/crelativeLayout6"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/ci32"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_place_black_24dp"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ci32"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/ci32"
+                    android:background="@color/editTextBG"
+                    android:hint="Birth Place"
+                    android:id="@+id/cbp"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/crelativeLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/crelativeLayout10"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/ci11"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_bloodgroup"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ci11"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/ci11"
+                    android:background="@color/editTextBG"
+                    android:hint="Blood Group"
+                    android:id="@+id/cbg"
+                    android:paddingLeft="20dp"
+                    android:inputType="text"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/crelativeLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/crelativeLayout7"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/ci41"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_hospital"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ci41"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/ci41"
+                    android:background="@color/editTextBG"
+                    android:hint="Hospital Number"
+                    android:id="@+id/chn"
+                    android:inputType="phone"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/crelativeLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/crelativeLayout8"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp">
+
+                <ImageView
+                    android:id="@+id/ci51"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+
+                    android:src="@drawable/ic_doctor"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/cdn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ci51"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/ci51"
+                    android:background="@color/editTextBG"
+                    android:hint="Doctor Email Address"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contentr1"
+                android:layout_below="@+id/crelativeLayout9"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp">
+
+                <ImageView
+                    android:id="@+id/tpi1"
+                    android:layout_width="40dp"
+                    android:paddingLeft="40dp" android:layout_height="40dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="15dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_fuser"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/trustp1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/tpi1"
+                    android:background="@color/editTextBG"
+                    android:hint="Relative 1 Email Id"
+
+                    android:inputType="text"
+                    android:paddingLeft="20dp" />
+
+                <ImageView
+                    android:id="@+id/tpi2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/colorPrimary"
+                    android:paddingLeft="40dp"
+                    android:padding="8dp"
+                    android:layout_below="@+id/tpi1"
+                    android:src="@drawable/ic_fuser"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/trustpr1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/trustp1"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/tpi2"
+
+                    android:background="@color/editTextBG"
+                    android:hint="Relation eg:mother,father,brother"
+                    android:inputType="text"
+                    android:paddingLeft="20dp" />
+                <ImageView
+                    android:id="@+id/tpi3"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/tpi2"
+                    android:background="@color/colorPrimary"
+                    android:padding="8dp"
+                    android:paddingLeft="40dp"
+                    android:src="@drawable/ic_fuser"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Relative 2 Email Id"
+                    android:layout_toRightOf="@+id/tpi3"
+                    android:background="@color/editTextBG"
+
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="20dp"
+                    android:layout_below="@+id/trustpr1"
+                    android:id="@+id/trustp2"
+                    />
+                <ImageView
+                    android:id="@+id/tpi4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:paddingLeft="40dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/tpi3"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_fuser"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:id="@+id/trustpr2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/trustp2"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/tpi4"
+                    android:background="@color/editTextBG"
+                    android:hint="Relation eg:father,mother,brother"
+                    android:inputType="text"
+                    android:paddingLeft="20dp" />
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rc3"
+            android:layout_marginTop="-90dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btbackb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-medium"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text=" Back "
+                android:textColor="@color/white" />
+
+
+            <Button
+                android:id="@+id/btnextb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="50dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-medium"
+                android:text=" Next "
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

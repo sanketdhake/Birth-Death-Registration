@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item android:id="@+id/profilem" android:title="Profile"  android:icon="@drawable/ic_person_black_24dp" />
+        <item android:id="@+id/homem" android:title="Home"  android:icon="@drawable/ic_home_black_24dp" />
+        <item android:id="@+id/notificationsm" android:title="Notifications"  android:icon="@drawable/ic_chat_bubble_black_24dp"/>
+    </group>
+    <item android:id="@+id/aboutm" android:title="Aboout" android:icon="@drawable/ic_chrome_reader_mode_black_24dp"/>
+    <item android:id="@+id/helpm" android:title="Help" android:icon="@drawable/ic_help_black_24dp"/>
+
+</menu>

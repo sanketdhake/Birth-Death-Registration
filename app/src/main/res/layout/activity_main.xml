@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/grad_bg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/icon" />
+
+        <RelativeLayout
+            android:id="@+id/rellay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon"
+            android:visibility="gone"
+            android:layout_marginTop="0dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/icuser"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/ic_user"
+                        app:tint="@color/black" />
+
+                    <Button
+                        android:id="@+id/btnUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/icuser"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/btn_bg"
+                        android:fontFamily="sans-serif-medium"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="User"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="10dp">
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp">
+
+                            <ImageView
+                                android:id="@+id/icdoc"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="19dp"
+                                android:layout_marginLeft="29dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/ic_doctor"
+                                app:tint="@color/black" />
+
+                            <Button
+                                android:id="@+id/btnDoctor"
+                                android:layout_width="100dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/icdoc"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="19dp"
+                                android:layout_marginLeft="19dp"
+                                android:layout_marginTop="9dp"
+                                android:background="@drawable/btn_bg"
+                                android:fontFamily="sans-serif-medium"
+                                android:padding="5dp"
+                                android:text="Doctor"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/icmo"
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginRight="22dp"
+                                android:src="@drawable/ic_mo"
+                                app:tint="@color/black" />
+
+
+                            <Button
+                                android:id="@+id/btnMo"
+                                android:layout_width="700dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/icmo"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_marginStart="62dp"
+                                android:layout_marginLeft="62dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/btn_bg"
+                                android:fontFamily="sans-serif-medium"
+                                android:padding="5dp"
+                                android:text="Muncipal Office"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:textSize="15sp" />
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

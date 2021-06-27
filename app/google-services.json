@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "51670637520",
+    "project_id": "bdregistration",
+    "storage_bucket": "bdregistration.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51670637520:android:95cecbe1c7ab576fa6b7d5",
+        "android_client_info": {
+          "package_name": "com.example.bdregistration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51670637520-35ukfdr2abchorl5uso8uqv2f7s7t5j4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNZ-7U___KBf-ElXU1it_5GAkV5Jc7JjI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "51670637520-35ukfdr2abchorl5uso8uqv2f7s7t5j4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
